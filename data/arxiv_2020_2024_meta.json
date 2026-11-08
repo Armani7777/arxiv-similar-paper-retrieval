@@ -1,0 +1,55 @@
+{
+  "query": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.IR)",
+  "years": [
+    2020,
+    2024
+  ],
+  "window_starts": [
+    1,
+    8,
+    15,
+    22
+  ],
+  "per_window": 45,
+  "windows_total": 240,
+  "windows_done": 238,
+  "windows_failed": {
+    "20240101": "HTTPError: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.IR%29+AND+submittedDate%3A%5B202401010000+TO+202401072359%5D&id_list=&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=45)",
+    "20240108": "HTTPError: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.IR%29+AND+submittedDate%3A%5B202401080000+TO+202401142359%5D&id_list=&sortBy=submittedDate&sortOrder=ascending&start=0&max_results=45)"
+  },
+  "candidates_after_cleaning": 10710,
+  "dropped": {
+    "duplicate": 90
+  },
+  "final_n": 10000,
+  "seed": 2020,
+  "per_year": {
+    "2020": 2009,
+    "2021": 2016,
+    "2022": 2027,
+    "2023": 1996,
+    "2024": 1952
+  },
+  "primary_top15": {
+    "cs.LG": 3213,
+    "cs.CL": 1786,
+    "cs.CV": 1138,
+    "cs.AI": 618,
+    "cs.IR": 348,
+    "stat.ML": 336,
+    "cs.CR": 225,
+    "cs.RO": 222,
+    "eess.IV": 199,
+    "cs.SD": 154,
+    "eess.SP": 139,
+    "eess.AS": 124,
+    "cs.HC": 103,
+    "cs.NE": 96,
+    "cs.CY": 95
+  },
+  "date_min": "2020-01-01",
+  "date_max": "2024-12-22",
+  "arxiv_package": "unknown",
+  "python": "3.13.2",
+  "finalized_at": "2026-11-08T15:39:54.952962+00:00"
+}

@@ -1,0 +1,24 @@
+\begin{table*}[!t]
+\centering
+\caption{Paired differences in test P@5: mean difference, 95\% bootstrap interval and Holm-adjusted randomization $p$-value.}
+\label{tab:stats}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & \multicolumn{2}{c}{May 2026} & \multicolumn{2}{c}{2020--2024} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Comparison & $\Delta$ [95\% CI] & $p$ & $\Delta$ [95\% CI] & $p$ \\
+\midrule
+MiniLM -- BM25 & +0.054 [+0.048, +0.060] & $<$0.002 & +0.080 [+0.074, +0.085] & $<$0.002 \\
+SPECTER2 -- BM25 & +0.064 [+0.058, +0.070] & $<$0.002 & +0.086 [+0.080, +0.092] & $<$0.002 \\
+BGE-small -- BM25 & +0.056 [+0.050, +0.062] & $<$0.002 & +0.061 [+0.055, +0.067] & $<$0.002 \\
+SPECTER2 -- MiniLM & +0.010 [+0.004, +0.015] & 0.004 & +0.006 [+0.001, +0.011] & 0.014 \\
+BGE-small -- MiniLM & +0.002 [$-$0.003, +0.007] & 0.946 & $-$0.019 [$-$0.023, $-$0.014] & $<$0.002 \\
+BGE-small -- SPECTER2 & $-$0.008 [$-$0.013, $-$0.002] & 0.016 & $-$0.025 [$-$0.030, $-$0.020] & $<$0.002 \\
+Hybrid (0.6) -- MiniLM & $-$0.001 [$-$0.006, +0.004] & 0.946 & $-$0.013 [$-$0.017, $-$0.009] & $<$0.002 \\
+TF-IDF -- BM25 & $-$0.027 [$-$0.033, $-$0.021] & $<$0.002 & $-$0.029 [$-$0.035, $-$0.023] & $<$0.002 \\
+LSA -- TF-IDF & +0.024 [+0.018, +0.030] & $<$0.002 & +0.015 [+0.009, +0.021] & $<$0.002 \\
+\bottomrule
+\end{tabular}
+\end{table*}

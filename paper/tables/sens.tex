@@ -1,0 +1,27 @@
+\begin{table*}[!t]
+\centering
+\caption{Sensitivity on the 1{,}000 development queries (May 2026). Range: dev nDCG@10 across the grid. The configuration with the best dev nDCG@10 is then scored once on the test set (P@5, default $\rightarrow$ selected). Bottom: dev P@5 by indexed field.}
+\label{tab:sens}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llccc@{}}
+\toprule
+System & Grid & Dev range & Selected & Test P@5 \\
+\midrule
+BM25 & $k_1\!\in\!\{0.9,1.2,1.5,2\}$, $b\!\in\!\{.4,.6,.75,.9\}$ & 0.429--0.437 & k1=2.0, b=0.9 & 0.456 $\rightarrow$ 0.460 \\
+TF-IDF & min\_df$\in\!\{1,3,5\}$, sublinear tf & 0.412--0.440 & min\_df=1, sublin. & 0.429 $\rightarrow$ 0.462 \\
+LSA & $k\in\{64,128,256,512\}$ & 0.419--0.435 & dim=64 & 0.454 $\rightarrow$ 0.458 \\
+MiniLM+BM25 & $w\!\in\![0,1]$, min-max/z, RRF & 0.434--0.471 & z-score, w=0.8 & 0.510$^\dagger$ $\rightarrow$ 0.516 \\
+SPECTER2+BM25 & $w\!\in\![0,1]$, min-max/z, RRF & 0.434--0.477 & min-max, w=0.9 & 0.520$^\dagger$ $\rightarrow$ 0.524 \\
+BGE-small+BM25 & $w\!\in\![0,1]$, min-max/z, RRF & 0.434--0.465 & min-max, w=0.8 & 0.512$^\dagger$ $\rightarrow$ 0.518 \\
+\midrule
+ & & Title & Abstract & Title+abstract \\
+\cmidrule(l){3-5}
+BM25 & dev P@5 & 0.387 & 0.449 & 0.454 \\
+TF-IDF & dev P@5 & 0.378 & 0.430 & 0.435 \\
+LSA & dev P@5 & 0.334 & 0.446 & 0.459 \\
+MiniLM & dev P@5 & 0.468 & 0.521 & 0.525 \\
+\bottomrule
+\multicolumn{5}{@{}l}{\scriptsize $^\dagger$ dense model alone.}
+\end{tabular}
+\end{table*}

@@ -1,0 +1,24 @@
+\begin{table}[!t]
+\centering
+\caption{Test-set results with pre-specified parameters. Relevance: same primary category; nDCG@10 uses graded category overlap. Every 95\% interval for P@5 and nDCG@10 has a half-width of at most 0.007. Best value per column in bold.}
+\label{tab:main}
+\footnotesize
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{May 2026} & \multicolumn{3}{c}{2020--2024} \\
+\cmidrule(lr){2-4}\cmidrule(l){5-7}
+Method & P@5 & nDCG@10 & MRR & P@5 & nDCG@10 & MRR \\
+\midrule
+BM25 & 0.456 & 0.440 & 0.647 & 0.481 & 0.460 & 0.662 \\
+TF-IDF & 0.429 & 0.418 & 0.618 & 0.452 & 0.434 & 0.623 \\
+LSA & 0.454 & 0.437 & 0.627 & 0.467 & 0.458 & 0.633 \\
+\midrule
+MiniLM & 0.510 & 0.467 & 0.679 & 0.561 & 0.509 & 0.708 \\
+SPECTER2 & \textbf{0.520} & \textbf{0.474} & \textbf{0.685} & \textbf{0.567} & \textbf{0.515} & \textbf{0.711} \\
+BGE-small & 0.512 & 0.466 & 0.684 & 0.542 & 0.506 & 0.695 \\
+\midrule
+Hybrid (0.6) & 0.509 & 0.469 & 0.684 & 0.548 & 0.503 & 0.705 \\
+\bottomrule
+\end{tabular}
+\end{table}
