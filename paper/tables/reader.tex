@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\centering
+\caption{Problem-level reading of 10 May-2026 test queries (one annotator, blind to system and category). Reader P@5: same research problem. Category P@5: same primary category, same lists. Right: the 50 top-five slots of each system split by the two labels.}
+\label{tab:reader}
+\scriptsize
+\setlength{\tabcolsep}{2.6pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & Reader & Category & \multicolumn{4}{c}{Slots (problem / category)} \\
+\cmidrule(l){4-7}
+Method & P@5 & P@5 & yes/yes & yes/no & no/yes & no/no \\
+\midrule
+BM25 & 0.18 & 0.40 & 3 & 6 & 17 & 24 \\
+TF-IDF & 0.20 & 0.36 & 6 & 4 & 12 & 28 \\
+LSA & 0.10 & 0.44 & 2 & 3 & 20 & 25 \\
+MiniLM & 0.10 & 0.62 & 1 & 4 & 30 & 15 \\
+SPECTER2 & 0.10 & 0.52 & 1 & 4 & 25 & 20 \\
+BGE-small & 0.16 & 0.54 & 3 & 5 & 24 & 18 \\
+Hybrid (0.6) & 0.20 & 0.56 & 3 & 7 & 25 & 15 \\
+\bottomrule
+\end{tabular}
+\end{table}

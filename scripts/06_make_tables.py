@@ -364,13 +364,28 @@ def main() -> None:
         po = sum(summ[s]["prob_only"] for s in dense_npz)
         co = sum(summ[s]["cat_only"] for s in dense_npz)
         tot = sum(sum(summ[s][k] for k in ("both", "prob_only", "cat_only", "neither")) for s in dense_npz)
+        rel = [c for q in key["queries"] for c in q["candidates"] if int(labels.get(c["cid"], 0))]
+        dense_set = {NPZ[d] for d in DENSE}
+        sparse_set = {NPZ[x] for x in SPARSE}
+        no_dense = sum(not (set(c["systems"]) & dense_set) for c in rel)
+        only_dense = sum(not (set(c["systems"]) & (sparse_set | {NPZ["Hybrid MiniLM+BM25 (0.6)"]})) for c in rel)
+        empty_q = sum(not any(int(labels.get(c["cid"], 0)) for c in q["candidates"]) for q in key["queries"])
+        lo = min(v["reader_P5"] for v in summ.values()); hi = max(v["reader_P5"] for v in summ.values())
+        def names(pred):
+            ns = [SHOW.get(npz2name.get(s_, s_), npz2name.get(s_, s_)).replace("Hybrid (0.6)", "the hybrid") for s_ in sys_list if pred(summ[s_]["reader_P5"])]
+            return ", ".join(ns[:-1]) + " and " + ns[-1] if len(ns) > 1 else "".join(ns)
+        vals["reader.lo"] = f"{lo:.2f}"; vals["reader.hi"] = f"{hi:.2f}"
+        vals["reader.rel"] = str(n_rel); vals["reader.nodense"] = str(no_dense); vals["reader.onlydense"] = str(only_dense)
         vals["reader.sentence"] = (
-            f"Of the {n_pool} pooled candidates, {n_rel} were marked as the same problem. "
-            f"Reader P@5 ranges from {min(v['reader_P5'] for v in summ.values()):.2f} to {max(v['reader_P5'] for v in summ.values()):.2f}; "
-            f"the highest value belongs to {SHOW.get(npz2name.get(top, top), npz2name.get(top, top))} and BM25 reaches {bm['reader_P5']:.2f}. "
-            f"Across the top-five slots of the three dense encoders, {po} of {tot} were the same problem in another category and "
-            f"{co} were in the query's category without being the same problem. Ten queries cannot separate systems whose reader "
-            f"precision differs by a few hundredths, so these values are descriptive.")
+            f"Of the {n_pool} pooled candidates the first author marked {n_rel} as the same research problem; "
+            f"for {empty_q} of the ten queries no pooled candidate qualified. Reader P@5 is low for every system, "
+            f"between {lo:.2f} and {hi:.2f}, and it does not follow the ranking by category: {names(lambda x: x >= 0.175)} "
+            f"reach 0.18--{hi:.2f}, while {names(lambda x: x <= 0.105)} reach {lo:.2f}. Of the {n_rel} same-problem papers, "
+            f"{no_dense} were retrieved by none of the three dense encoders and {only_dense} only by them. Category agreement "
+            f"over-counts far more often than it under-counts: of the {tot} top-five slots of the dense encoders, {co} share the "
+            f"query's category without addressing the same problem, while {po} address the same problem from another category. "
+            f"With ten queries and one annotator these figures are descriptive, but they indicate that the dense advantage in "
+            f"category precision reflects topical closeness more than same-problem relevance.")
     else:
         vals["pool.size"] = "--"
         vals["reader.sentence"] = "[problem-level labels pending]"

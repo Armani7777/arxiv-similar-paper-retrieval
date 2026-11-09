@@ -1,0 +1,63 @@
+{
+ "pool": 212,
+ "relevant": 18,
+ "missing": 0,
+ "systems": {
+  "BM25": {
+   "reader_P5": 0.18000000000000002,
+   "cat_P5": 0.4,
+   "both": 3,
+   "prob_only": 6,
+   "cat_only": 17,
+   "neither": 24
+  },
+  "TF-IDF": {
+   "reader_P5": 0.2,
+   "cat_P5": 0.36,
+   "both": 6,
+   "prob_only": 4,
+   "cat_only": 12,
+   "neither": 28
+  },
+  "LSA-128": {
+   "reader_P5": 0.1,
+   "cat_P5": 0.44000000000000006,
+   "both": 2,
+   "prob_only": 3,
+   "cat_only": 20,
+   "neither": 25
+  },
+  "MiniLM": {
+   "reader_P5": 0.1,
+   "cat_P5": 0.62,
+   "both": 1,
+   "prob_only": 4,
+   "cat_only": 30,
+   "neither": 15
+  },
+  "SPECTER2": {
+   "reader_P5": 0.1,
+   "cat_P5": 0.52,
+   "both": 1,
+   "prob_only": 4,
+   "cat_only": 25,
+   "neither": 20
+  },
+  "BGE-small": {
+   "reader_P5": 0.16,
+   "cat_P5": 0.54,
+   "both": 3,
+   "prob_only": 5,
+   "cat_only": 24,
+   "neither": 18
+  },
+  "Hybrid_MiniLMpBM25_0.6": {
+   "reader_P5": 0.2,
+   "cat_P5": 0.5599999999999999,
+   "both": 3,
+   "prob_only": 7,
+   "cat_only": 25,
+   "neither": 15
+  }
+ }
+}

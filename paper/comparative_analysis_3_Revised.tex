@@ -30,7 +30,7 @@ Zhanna.Sadirmekova1@astanait.edu.kz}
 \maketitle
 
 \begin{abstract}
-Literature search often starts from one paper: the reader has a relevant article and wants others on the same problem. We compare widely used text representations for this query-by-document task on arXiv computer-science preprints: BM25, TF-IDF, latent semantic analysis (LSA), three pretrained dense encoders (all-MiniLM-L6-v2, SPECTER2 and BGE-small) and a BM25--dense hybrid. Two corpora of 10{,}000 papers were collected through the arXiv API, one covering three weeks of May 2026 and one sampled across 2020--2024. Every eligible paper serves as a query with itself removed from the candidates; 1{,}000 queries per corpus are reserved for parameter selection and the remaining \val{may.test} and \val{y.test} for testing. A retrieved paper counts as relevant when it shares the query's primary arXiv category, a label that no compared system computes. All three dense encoders beat every sparse baseline on both corpora, also after the baselines are tuned: on the May corpus P@5 is \val{may.SPECTER.P5} for SPECTER2, \val{may.BGE.P5} for BGE-small and \val{may.MiniLM.P5} for MiniLM against \val{may.BM25.P5} for BM25, and the differences are significant under paired randomization tests with Holm correction. A tuned BM25 component adds little to a dense score. Category agreement is only a proxy for same-problem relevance, so the absolute precision values should be read as a comparison between systems rather than as the share of useful results.
+Literature search often starts from one paper: the reader has a relevant article and wants others on the same problem. We compare widely used text representations for this query-by-document task on arXiv computer-science preprints: BM25, TF-IDF, latent semantic analysis (LSA), three pretrained dense encoders (all-MiniLM-L6-v2, SPECTER2 and BGE-small) and a BM25--dense hybrid. Two corpora of 10{,}000 papers were collected through the arXiv API, one covering three weeks of May 2026 and one sampled across 2020--2024. Every eligible paper serves as a query with itself removed from the candidates; 1{,}000 queries per corpus are reserved for parameter selection and the remaining \val{may.test} and \val{y.test} for testing. A retrieved paper counts as relevant when it shares the query's primary arXiv category, a label that no compared system computes. All three dense encoders beat every sparse baseline on both corpora, also after the baselines are tuned: on the May corpus P@5 is \val{may.SPECTER.P5} for SPECTER2, \val{may.BGE.P5} for BGE-small and \val{may.MiniLM.P5} for MiniLM against \val{may.BM25.P5} for BM25, and the differences are significant under paired randomization tests with Holm correction. A tuned BM25 component adds little to a dense score. A blind problem-level reading of 10 queries by the first author tells a different story: same-problem precision is low for every system (\val{reader.lo}--\val{reader.hi}) and the dense encoders are not ahead, so category precision measures topical closeness rather than usefulness to a reader.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -48,8 +48,9 @@ This paper is an empirical comparison, not a new ranking model. Its contribution
 \item a controlled comparison of seven retrieval configurations on two arXiv corpora, a recent three-week slice and a five-year sample, using every eligible paper as a query rather than a small sample;
 \item a sensitivity and ablation analysis covering BM25 $k_1$ and $b$, TF-IDF weighting, LSA rank, the hybrid weight and score normalization, and the text fields, with all choices made on a held-out query set;
 \item paired significance tests with bootstrap confidence intervals for every headline difference;
+\item a blind, problem-level reading of pooled results that measures how often the category proxy and same-problem relevance disagree.
 \end{itemize}
-Code, query lists, per-query scores and rankings are publicly released (see Data and Code Availability).
+Code, query lists, per-query scores and the manual labels are publicly released (see Data and Code Availability).
 
 \section{Related Work}
 
@@ -112,7 +113,8 @@ Fig.~\ref{fig:pipeline} summarizes the pipeline.
 \node[box=18mm, right=of txt, yshift=6mm] (sp) {sparse: BM25,\\TF-IDF, LSA};
 \node[box=18mm, right=of txt, yshift=-6mm] (de) {dense: MiniLM,\\SPECTER2, BGE};
 \node[box=12mm] (hy) at ([xshift=10mm]sp.east |- txt) {top 100\\(+ hybrid)};
-\node[box=30mm, anchor=north] (cat) at ([yshift=-5mm]de.south) {category proxy: all test queries,\\paired tests, dev-set sensitivity};
+\node[box=24mm, anchor=north east] (cat) at ([yshift=-5mm, xshift=-1.5mm]de.south) {category proxy:\\all test queries};
+\node[box=24mm, anchor=north west] (man) at ([yshift=-5mm, xshift=1.5mm]de.south) {problem-level reading:\\10 queries, blind};
 \draw[arr] (api) -- (txt);
 \draw[arr] (txt.east) -- ++(1.2mm,0) |- (sp.west);
 \draw[arr] (txt.east) -- ++(1.2mm,0) |- (de.west);
@@ -121,6 +123,7 @@ Fig.~\ref{fig:pipeline} summarizes the pipeline.
 \coordinate (j) at ([yshift=-2.5mm]de.south -| hy.south);
 \draw ([xshift=2mm]hy.south) |- (j);
 \draw[arr] (j) -| (cat.north);
+\draw[arr] (j) -| (man.north);
 \end{tikzpicture}
 \caption{Evaluation pipeline. The query paper is removed from its own candidate list before ranking.}
 \label{fig:pipeline}
@@ -129,7 +132,7 @@ Fig.~\ref{fig:pipeline} summarizes the pipeline.
 \section{Evaluation Protocol}
 \label{sec:eval}
 
-\textit{Relevance proxy.} A candidate is relevant when its primary category equals the query's. We use this label because it is available for every paper, so all test queries can be scored, and because no compared system produces it. It is an imperfect proxy for ``the same research problem'': a paper on the same problem can be filed under another category, and two papers in one category can address different problems. Section~VII discusses what this means for interpreting the results.
+\textit{Relevance proxy.} A candidate is relevant when its primary category equals the query's. We use this label because it is available for every paper, so all test queries can be scored, and because no compared system produces it. It is an imperfect proxy for ``the same research problem'': a paper on the same problem can be filed under another category, and two papers in one category can address different problems. The problem-level reading below measures both failure modes directly.
 
 \textit{Metrics.} Precision at $k$ is the fraction of the top $k$ that is relevant; we report $k=5$ and $k=10$. Mean reciprocal rank (MRR) uses the rank of the first relevant candidate within the top 100. For nDCG@10 the gain is graded, $g(q,d)=|C_q\cap C_d|/|C_q\cup C_d|$, the Jaccard overlap of the two category lists, and
 \begin{equation}
@@ -139,6 +142,8 @@ Fig.~\ref{fig:pipeline} summarizes the pipeline.
 where $Z_q$ is the same sum for the ten candidates with the largest gain. A random ranking would reach an expected precision of $(n_c-1)/(N-1)$ for a query in category $c$ of size $n_c$; averaged over the test queries this chance level is \val{may.chance} for May 2026 and \val{y.chance} for 2020--2024.
 
 \textit{Statistics.} For each pair of systems we compute per-query differences, a 95\% bootstrap interval of the mean difference (10{,}000 resamples), and a two-sided paired randomization test with 10{,}000 sign flips, which is well suited to retrieval metrics \cite{smucker2007significance}. Within each metric, $p$-values are adjusted with the Holm procedure \cite{holm1979}. With 10{,}000 permutations the smallest attainable $p$ is about $10^{-4}$.
+
+\textit{Problem-level reading.} Ten test queries from the May corpus were drawn, one from each of the ten most frequent primary categories in the test set (seed 11). The top five of all seven systems were pooled, giving \val{pool.size} distinct candidates. The first author read the title and abstract of each query and candidate and marked a candidate relevant if it studies the same research problem: the same task applied to the same kind of object, a paper one would expect to cite in the related-work section. A shared field or technical term was not sufficient. The pool was shuffled, and neither the retrieving system nor any arXiv category was shown. Reader P@5 is the share of a system's own top five marked relevant; every top-five candidate is in the pool, so no hit is unjudged. This is a single-annotator check of the proxy, not a test collection.
 
 \section{Results}
 \label{sec:results}
@@ -176,24 +181,30 @@ Fig.~\ref{fig:weights} shows nDCG@10 of the MiniLM--BM25 hybrid across weights o
 \label{fig:weights}
 \end{figure}
 
+\subsection{Problem-level reading}
+
+Table~\ref{tab:reader} compares reader P@5 with category P@5 on the ten judged queries. \val{reader.sentence}
+
+\input{tables/reader.tex}
+
 \section{Discussion}
 
 The two corpora differ in time span, topic mix and the share of cross-listed papers, yet the ordering of systems is the same on both: the dense encoders first, BM25 and LSA next, TF-IDF last. The May corpus is therefore not an outlier caused by a three-week window. At the same time the margins are moderate. The best dense encoder improves category P@5 over the best sparse baseline by \val{gap.points} points on the May corpus and \val{gap.points.y} points on the 2020--2024 corpus, and the per-category split shows that the gain is concentrated in categories whose vocabulary is shared with other fields. A domain-specific encoder helps only slightly: SPECTER2 is ahead of the general-purpose MiniLM by about one point.
 
-The proxy itself qualifies the main tables. Category agreement counts same-problem papers filed elsewhere as misses and counts different-problem papers in the same category as hits. Both happen often in computer science, where machine-learning methods are cross-listed under many application categories. Category precision is useful for comparing systems on thousands of queries, because it is independent of the systems and cheap, but it should not be read as the share of results a researcher would keep.
+The problem-level reading qualifies the main tables. Category agreement counts same-problem papers filed elsewhere as misses and counts different-problem papers in the same category as hits, and on the judged queries the second error is much more frequent. The dense encoders are good at returning papers from the same area, which is what the category proxy rewards, but on these queries a paper about the same specific problem was more often found by term matching: such papers tend to share rare task, dataset or model names with the query. Category precision is useful for comparing systems on thousands of queries, because it is independent of the systems and cheap, but it should not be read as the share of results a researcher would keep, and it may overstate the benefit of dense retrieval for problem-level search. Ten queries are too few to rank systems by reader precision; the reading shows the size of the gap between the two notions of relevance, not a reversed ranking.
 
-\textit{Limitations.} The relevance label is a proxy, and we did not collect problem-level judgments, so the results rank systems but do not measure how many retrieved papers a researcher would keep. Both corpora come from four arXiv computer-science categories and contain titles and abstracts only, so the results do not cover full text, citation graphs or other disciplines. The dense encoders were used off the shelf; fine-tuning or larger models may change the margins. Two weekly windows of January 2024 are missing from the multi-year corpus because of API rate limits.
+\textit{Limitations.} The relevance label is a proxy, and the problem-level check covers 10 queries and one annotator, so it estimates the direction and rough size of the disagreement rather than precise reader precision. Both corpora come from four arXiv computer-science categories and contain titles and abstracts only, so the results do not cover full text, citation graphs or other disciplines. The dense encoders were used off the shelf; fine-tuning or larger models may change the margins. Two weekly windows of January 2024 are missing from the multi-year corpus because of API rate limits.
 
 \section{Conclusion}
 
-On two arXiv computer-science corpora, with every eligible paper used as a query and the query removed from its own results, pretrained dense encoders retrieve more same-category papers than BM25, TF-IDF and LSA. The advantage holds over three weeks of 2026 and over five years of 2020--2024, survives tuning of the sparse baselines on held-out queries, and is statistically reliable, although moderate in size. Mixing BM25 into a dense score with a tuned weight neither helps nor hurts category precision; a fixed weight of 0.6 can hurt it slightly. Because category agreement is a proxy, the next step is a problem-level test collection judged by several annotators on the released rankings, together with full-text and citation signals.
+On two arXiv computer-science corpora, with every eligible paper used as a query and the query removed from its own results, pretrained dense encoders retrieve more same-category papers than BM25, TF-IDF and LSA. The advantage holds over three weeks of 2026 and over five years of 2020--2024, survives tuning of the sparse baselines on held-out queries, and is statistically reliable, although moderate in size. Mixing BM25 into a dense score with a tuned weight neither helps nor hurts category precision; a fixed weight of 0.6 can hurt it slightly. A blind problem-level reading of ten queries finds low same-problem precision for all systems and no dense advantage, which argues for reporting category precision together with problem-level judgments and for keeping a lexical component in similar-paper search. Future work will add expert judgments from several annotators and full-text and citation signals.
 
 \section*{Data and Code Availability}
 \label{sec:availability}
-The collection and evaluation scripts, the arXiv identifiers of both corpora, the development and test query lists, per-query scores and rankings are available at \url{https://github.com/Armani7777/arxiv-similar-paper-retrieval}.
+The collection and evaluation scripts, the arXiv identifiers of both corpora, the development and test query lists, per-query scores, rankings and the manual labels are available at \url{https://github.com/Armani7777/arxiv-similar-paper-retrieval}.
 
 \section*{Acknowledgment}
-The authors thank arXiv for open access to its metadata. Generative AI (Claude, Anthropic) was used to help write the analysis scripts and edit the manuscript text. The authors designed the study, ran all experiments, verified all code, results and references, and take full responsibility for the content.
+The authors thank arXiv for open access to its metadata. \val{ai.disclosure}
 
 \begin{thebibliography}{99}
 \input{refs.tex}

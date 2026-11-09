@@ -1,0 +1,2915 @@
+{
+ "systems": [
+  "BM25",
+  "TF-IDF",
+  "LSA-128",
+  "MiniLM",
+  "SPECTER2",
+  "BGE-small",
+  "Hybrid_MiniLMpBM25_0.6"
+ ],
+ "pool_k": 5,
+ "seed": 11,
+ "queries": [
+  {
+   "qid": "Q01",
+   "row": 6288,
+   "arxiv_id": "2605.12394v2",
+   "primary": "cs.LG",
+   "candidates": [
+    {
+     "cid": "Q01-C01",
+     "row": 2411,
+     "arxiv_id": "2605.23591v1",
+     "primary": "stat.ML",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 5
+     }
+    },
+    {
+     "cid": "Q01-C02",
+     "row": 7443,
+     "arxiv_id": "2605.09724v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 1
+     }
+    },
+    {
+     "cid": "Q01-C03",
+     "row": 8215,
+     "arxiv_id": "2605.07870v2",
+     "primary": "cond-mat.dis-nn",
+     "systems": [
+      "LSA-128",
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "LSA-128": 3,
+      "MiniLM": 2,
+      "SPECTER2": 1,
+      "BGE-small": 1,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q01-C04",
+     "row": 4396,
+     "arxiv_id": "2605.17606v2",
+     "primary": "cs.LG",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 4
+     }
+    },
+    {
+     "cid": "Q01-C05",
+     "row": 7009,
+     "arxiv_id": "2605.10650v1",
+     "primary": "cs.LG",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q01-C06",
+     "row": 4023,
+     "arxiv_id": "2605.18598v1",
+     "primary": "cs.LG",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 5
+     }
+    },
+    {
+     "cid": "Q01-C07",
+     "row": 6028,
+     "arxiv_id": "2605.18845v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 5
+     }
+    },
+    {
+     "cid": "Q01-C08",
+     "row": 9014,
+     "arxiv_id": "2605.06152v3",
+     "primary": "cs.LG",
+     "systems": [
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small"
+     ],
+     "rank": {
+      "MiniLM": 5,
+      "SPECTER2": 2,
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q01-C09",
+     "row": 1245,
+     "arxiv_id": "2605.27078v2",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "MiniLM",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "TF-IDF": 2,
+      "MiniLM": 1,
+      "BGE-small": 2,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q01-C10",
+     "row": 6541,
+     "arxiv_id": "2605.11838v1",
+     "primary": "cs.LG",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 3
+     }
+    },
+    {
+     "cid": "Q01-C11",
+     "row": 1237,
+     "arxiv_id": "2605.27097v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 4
+     }
+    },
+    {
+     "cid": "Q01-C12",
+     "row": 1390,
+     "arxiv_id": "2605.27469v1",
+     "primary": "cs.LG",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 2
+     }
+    },
+    {
+     "cid": "Q01-C13",
+     "row": 8903,
+     "arxiv_id": "2605.06352v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 4
+     }
+    },
+    {
+     "cid": "Q01-C14",
+     "row": 9261,
+     "arxiv_id": "2605.08237v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 3
+     }
+    },
+    {
+     "cid": "Q01-C15",
+     "row": 2595,
+     "arxiv_id": "2605.23087v1",
+     "primary": "cs.LG",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q01-C16",
+     "row": 2865,
+     "arxiv_id": "2605.22297v3",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 2,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q01-C17",
+     "row": 267,
+     "arxiv_id": "2605.29684v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 3,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q01-C18",
+     "row": 9873,
+     "arxiv_id": "2605.03634v1",
+     "primary": "stat.ML",
+     "systems": [
+      "BM25",
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 5,
+      "MiniLM": 3,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q01-C19",
+     "row": 5096,
+     "arxiv_id": "2605.15551v1",
+     "primary": "cs.LG",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 1
+     }
+    },
+    {
+     "cid": "Q01-C20",
+     "row": 913,
+     "arxiv_id": "2605.28021v1",
+     "primary": "cs.LG",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 4
+     }
+    },
+    {
+     "cid": "Q01-C21",
+     "row": 5411,
+     "arxiv_id": "2605.14659v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 4
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q02",
+   "row": 7453,
+   "arxiv_id": "2605.09698v1",
+   "primary": "cs.AI",
+   "candidates": [
+    {
+     "cid": "Q02-C01",
+     "row": 7126,
+     "arxiv_id": "2605.10365v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 1
+     }
+    },
+    {
+     "cid": "Q02-C02",
+     "row": 965,
+     "arxiv_id": "2605.27922v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 4
+     }
+    },
+    {
+     "cid": "Q02-C03",
+     "row": 3459,
+     "arxiv_id": "2605.20530v2",
+     "primary": "cs.AI",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q02-C04",
+     "row": 4473,
+     "arxiv_id": "2605.17416v1",
+     "primary": "cs.SE",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 5
+     }
+    },
+    {
+     "cid": "Q02-C05",
+     "row": 7392,
+     "arxiv_id": "2605.09826v2",
+     "primary": "cs.AI",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 2
+     }
+    },
+    {
+     "cid": "Q02-C06",
+     "row": 8190,
+     "arxiv_id": "2605.07937v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 3,
+      "SPECTER2": 3,
+      "BGE-small": 5,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q02-C07",
+     "row": 5058,
+     "arxiv_id": "2605.15635v1",
+     "primary": "cs.CL",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 1
+     }
+    },
+    {
+     "cid": "Q02-C08",
+     "row": 1586,
+     "arxiv_id": "2605.26079v2",
+     "primary": "cs.CL",
+     "systems": [
+      "MiniLM",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 1,
+      "BGE-small": 4,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q02-C09",
+     "row": 8490,
+     "arxiv_id": "2605.07251v1",
+     "primary": "cs.AI",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 4
+     }
+    },
+    {
+     "cid": "Q02-C10",
+     "row": 980,
+     "arxiv_id": "2605.27898v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 5
+     }
+    },
+    {
+     "cid": "Q02-C11",
+     "row": 8195,
+     "arxiv_id": "2605.07926v2",
+     "primary": "cs.AI",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 2
+     }
+    },
+    {
+     "cid": "Q02-C12",
+     "row": 105,
+     "arxiv_id": "2605.30104v1",
+     "primary": "cs.CL",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 1
+     }
+    },
+    {
+     "cid": "Q02-C13",
+     "row": 4512,
+     "arxiv_id": "2605.17324v1",
+     "primary": "cs.CR",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 2,
+      "TF-IDF": 4,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q02-C14",
+     "row": 7179,
+     "arxiv_id": "2605.10246v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 2
+     }
+    },
+    {
+     "cid": "Q02-C15",
+     "row": 1883,
+     "arxiv_id": "2605.25284v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "TF-IDF": 2,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q02-C16",
+     "row": 6299,
+     "arxiv_id": "2605.12376v1",
+     "primary": "cs.AI",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 4
+     }
+    },
+    {
+     "cid": "Q02-C17",
+     "row": 1536,
+     "arxiv_id": "2605.26329v1",
+     "primary": "cs.AI",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 3
+     }
+    },
+    {
+     "cid": "Q02-C18",
+     "row": 6365,
+     "arxiv_id": "2605.12233v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF",
+      "LSA-128"
+     ],
+     "rank": {
+      "TF-IDF": 5,
+      "LSA-128": 1
+     }
+    },
+    {
+     "cid": "Q02-C19",
+     "row": 304,
+     "arxiv_id": "2605.29601v1",
+     "primary": "cs.CL",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 5
+     }
+    },
+    {
+     "cid": "Q02-C20",
+     "row": 1725,
+     "arxiv_id": "2605.25678v2",
+     "primary": "stat.ML",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 3
+     }
+    },
+    {
+     "cid": "Q02-C21",
+     "row": 7666,
+     "arxiv_id": "2605.09252v2",
+     "primary": "cs.CL",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 2
+     }
+    },
+    {
+     "cid": "Q02-C22",
+     "row": 7967,
+     "arxiv_id": "2605.08647v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q02-C23",
+     "row": 2334,
+     "arxiv_id": "2605.24110v1",
+     "primary": "cs.AI",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q02-C24",
+     "row": 686,
+     "arxiv_id": "2605.28532v1",
+     "primary": "cs.AI",
+     "systems": [
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 3,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q03",
+   "row": 6322,
+   "arxiv_id": "2605.12328v1",
+   "primary": "cs.CL",
+   "candidates": [
+    {
+     "cid": "Q03-C01",
+     "row": 2030,
+     "arxiv_id": "2605.24910v1",
+     "primary": "cs.AI",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 3
+     }
+    },
+    {
+     "cid": "Q03-C02",
+     "row": 2454,
+     "arxiv_id": "2605.23440v4",
+     "primary": "cs.CL",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 1
+     }
+    },
+    {
+     "cid": "Q03-C03",
+     "row": 3454,
+     "arxiv_id": "2605.20537v1",
+     "primary": "cs.CL",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 1
+     }
+    },
+    {
+     "cid": "Q03-C04",
+     "row": 3446,
+     "arxiv_id": "2605.20558v2",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 5,
+      "TF-IDF": 2,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q03-C05",
+     "row": 9334,
+     "arxiv_id": "2605.05427v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 4
+     }
+    },
+    {
+     "cid": "Q03-C06",
+     "row": 8709,
+     "arxiv_id": "2605.06866v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 1
+     }
+    },
+    {
+     "cid": "Q03-C07",
+     "row": 4939,
+     "arxiv_id": "2605.16000v2",
+     "primary": "cs.SI",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q03-C08",
+     "row": 5578,
+     "arxiv_id": "2605.14257v2",
+     "primary": "cs.CL",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 2
+     }
+    },
+    {
+     "cid": "Q03-C09",
+     "row": 3584,
+     "arxiv_id": "2605.20043v2",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 2,
+      "TF-IDF": 5,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q03-C10",
+     "row": 6767,
+     "arxiv_id": "2605.11312v1",
+     "primary": "cs.AI",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 3
+     }
+    },
+    {
+     "cid": "Q03-C11",
+     "row": 7019,
+     "arxiv_id": "2605.10627v1",
+     "primary": "cs.CL",
+     "systems": [
+      "LSA-128",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "LSA-128": 4,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q03-C12",
+     "row": 9298,
+     "arxiv_id": "2605.05525v1",
+     "primary": "cs.DB",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 3
+     }
+    },
+    {
+     "cid": "Q03-C13",
+     "row": 6777,
+     "arxiv_id": "2605.11289v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 4
+     }
+    },
+    {
+     "cid": "Q03-C14",
+     "row": 6562,
+     "arxiv_id": "2605.11769v1",
+     "primary": "cs.CL",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 5
+     }
+    },
+    {
+     "cid": "Q03-C15",
+     "row": 6009,
+     "arxiv_id": "2605.13113v1",
+     "primary": "cs.CY",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 1
+     }
+    },
+    {
+     "cid": "Q03-C16",
+     "row": 2577,
+     "arxiv_id": "2605.28864v1",
+     "primary": "cs.AI",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 3
+     }
+    },
+    {
+     "cid": "Q03-C17",
+     "row": 3201,
+     "arxiv_id": "2605.21256v1",
+     "primary": "cs.CL",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 1
+     }
+    },
+    {
+     "cid": "Q03-C18",
+     "row": 2128,
+     "arxiv_id": "2605.24663v1",
+     "primary": "cs.CR",
+     "systems": [
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q03-C19",
+     "row": 3396,
+     "arxiv_id": "2605.20684v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 5
+     }
+    },
+    {
+     "cid": "Q03-C20",
+     "row": 7956,
+     "arxiv_id": "2605.08671v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 2
+     }
+    },
+    {
+     "cid": "Q03-C21",
+     "row": 575,
+     "arxiv_id": "2605.28787v1",
+     "primary": "cs.IR",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 2
+     }
+    },
+    {
+     "cid": "Q03-C22",
+     "row": 5385,
+     "arxiv_id": "2605.14744v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q03-C23",
+     "row": 7452,
+     "arxiv_id": "2605.09699v1",
+     "primary": "eess.IV",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 5
+     }
+    },
+    {
+     "cid": "Q03-C24",
+     "row": 7706,
+     "arxiv_id": "2605.12547v2",
+     "primary": "econ.EM",
+     "systems": [
+      "BM25",
+      "SPECTER2"
+     ],
+     "rank": {
+      "BM25": 4,
+      "SPECTER2": 4
+     }
+    },
+    {
+     "cid": "Q03-C25",
+     "row": 28,
+     "arxiv_id": "2605.30289v1",
+     "primary": "cs.LG",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 2
+     }
+    },
+    {
+     "cid": "Q03-C26",
+     "row": 354,
+     "arxiv_id": "2605.29478v1",
+     "primary": "cs.NE",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 3
+     }
+    },
+    {
+     "cid": "Q03-C27",
+     "row": 3384,
+     "arxiv_id": "2605.20712v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25",
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "MiniLM": 4,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q04",
+   "row": 5457,
+   "arxiv_id": "2605.14534v1",
+   "primary": "cs.CV",
+   "candidates": [
+    {
+     "cid": "Q04-C01",
+     "row": 7649,
+     "arxiv_id": "2605.16366v1",
+     "primary": "cs.CV",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 3
+     }
+    },
+    {
+     "cid": "Q04-C02",
+     "row": 2040,
+     "arxiv_id": "2605.24879v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 2
+     }
+    },
+    {
+     "cid": "Q04-C03",
+     "row": 2987,
+     "arxiv_id": "2605.21977v1",
+     "primary": "cs.CV",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 5
+     }
+    },
+    {
+     "cid": "Q04-C04",
+     "row": 3535,
+     "arxiv_id": "2605.20174v1",
+     "primary": "cs.CV",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 3
+     }
+    },
+    {
+     "cid": "Q04-C05",
+     "row": 5175,
+     "arxiv_id": "2605.15391v1",
+     "primary": "cs.CV",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q04-C06",
+     "row": 4604,
+     "arxiv_id": "2605.17133v1",
+     "primary": "cs.CV",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 4
+     }
+    },
+    {
+     "cid": "Q04-C07",
+     "row": 8477,
+     "arxiv_id": "2605.07278v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 1
+     }
+    },
+    {
+     "cid": "Q04-C08",
+     "row": 2759,
+     "arxiv_id": "2605.22570v1",
+     "primary": "cs.CV",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 2
+     }
+    },
+    {
+     "cid": "Q04-C09",
+     "row": 9793,
+     "arxiv_id": "2605.03885v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 2
+     }
+    },
+    {
+     "cid": "Q04-C10",
+     "row": 4891,
+     "arxiv_id": "2605.16122v1",
+     "primary": "cs.CV",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 1
+     }
+    },
+    {
+     "cid": "Q04-C11",
+     "row": 6364,
+     "arxiv_id": "2605.12235v1",
+     "primary": "stat.ML",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 5
+     }
+    },
+    {
+     "cid": "Q04-C12",
+     "row": 650,
+     "arxiv_id": "2605.28604v1",
+     "primary": "cs.CV",
+     "systems": [
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q04-C13",
+     "row": 4224,
+     "arxiv_id": "2605.18018v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 3
+     }
+    },
+    {
+     "cid": "Q04-C14",
+     "row": 1765,
+     "arxiv_id": "2605.25574v1",
+     "primary": "cs.CV",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 2
+     }
+    },
+    {
+     "cid": "Q04-C15",
+     "row": 3791,
+     "arxiv_id": "2605.19382v1",
+     "primary": "cs.AI",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 5
+     }
+    },
+    {
+     "cid": "Q04-C16",
+     "row": 9135,
+     "arxiv_id": "2605.05895v1",
+     "primary": "cs.CV",
+     "systems": [
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 2,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q04-C17",
+     "row": 3516,
+     "arxiv_id": "2605.20373v1",
+     "primary": "cs.RO",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 2
+     }
+    },
+    {
+     "cid": "Q04-C18",
+     "row": 9900,
+     "arxiv_id": "2605.03547v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q04-C19",
+     "row": 2676,
+     "arxiv_id": "2605.22903v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 1
+     }
+    },
+    {
+     "cid": "Q04-C20",
+     "row": 9484,
+     "arxiv_id": "2605.04917v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 3
+     }
+    },
+    {
+     "cid": "Q04-C21",
+     "row": 9620,
+     "arxiv_id": "2605.04503v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 5
+     }
+    },
+    {
+     "cid": "Q04-C22",
+     "row": 9642,
+     "arxiv_id": "2605.04453v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 4,
+      "SPECTER2": 4,
+      "BGE-small": 5,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q04-C23",
+     "row": 2522,
+     "arxiv_id": "2605.23245v1",
+     "primary": "cs.CV",
+     "systems": [
+      "MiniLM",
+      "SPECTER2",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 1,
+      "SPECTER2": 5,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q04-C24",
+     "row": 5225,
+     "arxiv_id": "2605.15185v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "LSA-128",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "TF-IDF": 4,
+      "LSA-128": 1,
+      "BGE-small": 4,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q04-C25",
+     "row": 4861,
+     "arxiv_id": "2605.16223v1",
+     "primary": "cs.GR",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 3
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q05",
+   "row": 9166,
+   "arxiv_id": "2605.05818v1",
+   "primary": "cs.CR",
+   "candidates": [
+    {
+     "cid": "Q05-C01",
+     "row": 7867,
+     "arxiv_id": "2605.08838v1",
+     "primary": "cs.CL",
+     "systems": [
+      "TF-IDF",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "TF-IDF": 1,
+      "BGE-small": 1,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q05-C02",
+     "row": 4800,
+     "arxiv_id": "2605.16626v2",
+     "primary": "cs.CR",
+     "systems": [
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q05-C03",
+     "row": 7292,
+     "arxiv_id": "2605.18792v1",
+     "primary": "cs.IR",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 5
+     }
+    },
+    {
+     "cid": "Q05-C04",
+     "row": 6465,
+     "arxiv_id": "2605.11996v1",
+     "primary": "cs.AI",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 4
+     }
+    },
+    {
+     "cid": "Q05-C05",
+     "row": 2246,
+     "arxiv_id": "2605.24366v1",
+     "primary": "cs.CL",
+     "systems": [
+      "TF-IDF",
+      "LSA-128"
+     ],
+     "rank": {
+      "TF-IDF": 3,
+      "LSA-128": 3
+     }
+    },
+    {
+     "cid": "Q05-C06",
+     "row": 349,
+     "arxiv_id": "2605.29491v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 4
+     }
+    },
+    {
+     "cid": "Q05-C07",
+     "row": 2120,
+     "arxiv_id": "2605.27445v1",
+     "primary": "cs.IR",
+     "systems": [
+      "LSA-128",
+      "BGE-small"
+     ],
+     "rank": {
+      "LSA-128": 5,
+      "BGE-small": 4
+     }
+    },
+    {
+     "cid": "Q05-C08",
+     "row": 1457,
+     "arxiv_id": "2605.26526v1",
+     "primary": "cs.LG",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 3
+     }
+    },
+    {
+     "cid": "Q05-C09",
+     "row": 505,
+     "arxiv_id": "2605.29107v1",
+     "primary": "cs.CR",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 1
+     }
+    },
+    {
+     "cid": "Q05-C10",
+     "row": 9445,
+     "arxiv_id": "2605.05003v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 2
+     }
+    },
+    {
+     "cid": "Q05-C11",
+     "row": 818,
+     "arxiv_id": "2605.28201v1",
+     "primary": "cs.AI",
+     "systems": [
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 1,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q05-C12",
+     "row": 3567,
+     "arxiv_id": "2605.20084v1",
+     "primary": "cs.CL",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q05-C13",
+     "row": 882,
+     "arxiv_id": "2605.28074v1",
+     "primary": "cs.CR",
+     "systems": [
+      "SPECTER2",
+      "BGE-small"
+     ],
+     "rank": {
+      "SPECTER2": 2,
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q05-C14",
+     "row": 1429,
+     "arxiv_id": "2605.26595v1",
+     "primary": "cs.CR",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 4
+     }
+    },
+    {
+     "cid": "Q05-C15",
+     "row": 158,
+     "arxiv_id": "2605.29956v1",
+     "primary": "cs.IR",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 3
+     }
+    },
+    {
+     "cid": "Q05-C16",
+     "row": 1370,
+     "arxiv_id": "2605.26754v1",
+     "primary": "cs.CR",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 5
+     }
+    },
+    {
+     "cid": "Q05-C17",
+     "row": 5868,
+     "arxiv_id": "2605.13411v1",
+     "primary": "cs.CR",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q05-C18",
+     "row": 9253,
+     "arxiv_id": "2605.05632v1",
+     "primary": "cs.CR",
+     "systems": [
+      "TF-IDF",
+      "LSA-128",
+      "MiniLM",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "TF-IDF": 5,
+      "LSA-128": 2,
+      "MiniLM": 5,
+      "BGE-small": 2,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q05-C19",
+     "row": 4246,
+     "arxiv_id": "2605.17971v1",
+     "primary": "cs.CR",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 3
+     }
+    },
+    {
+     "cid": "Q05-C20",
+     "row": 133,
+     "arxiv_id": "2605.30029v1",
+     "primary": "cs.AI",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 4
+     }
+    },
+    {
+     "cid": "Q05-C21",
+     "row": 7176,
+     "arxiv_id": "2605.10253v1",
+     "primary": "cs.CR",
+     "systems": [
+      "BM25",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q05-C22",
+     "row": 5474,
+     "arxiv_id": "2605.14488v1",
+     "primary": "cs.AI",
+     "systems": [
+      "TF-IDF",
+      "LSA-128"
+     ],
+     "rank": {
+      "TF-IDF": 2,
+      "LSA-128": 1
+     }
+    },
+    {
+     "cid": "Q05-C23",
+     "row": 1964,
+     "arxiv_id": "2605.25073v1",
+     "primary": "cs.CR",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 2
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q06",
+   "row": 3827,
+   "arxiv_id": "2605.19313v1",
+   "primary": "stat.ML",
+   "candidates": [
+    {
+     "cid": "Q06-C01",
+     "row": 5912,
+     "arxiv_id": "2605.13312v1",
+     "primary": "cs.LG",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 2
+     }
+    },
+    {
+     "cid": "Q06-C02",
+     "row": 9280,
+     "arxiv_id": "2605.05568v1",
+     "primary": "stat.ML",
+     "systems": [
+      "LSA-128",
+      "BGE-small"
+     ],
+     "rank": {
+      "LSA-128": 5,
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q06-C03",
+     "row": 3026,
+     "arxiv_id": "2605.21846v1",
+     "primary": "stat.ME",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 3
+     }
+    },
+    {
+     "cid": "Q06-C04",
+     "row": 815,
+     "arxiv_id": "2605.28209v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 2
+     }
+    },
+    {
+     "cid": "Q06-C05",
+     "row": 9735,
+     "arxiv_id": "2605.04191v1",
+     "primary": "stat.ML",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "LSA-128",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 3,
+      "TF-IDF": 5,
+      "LSA-128": 1,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q06-C06",
+     "row": 9398,
+     "arxiv_id": "2605.05125v1",
+     "primary": "cs.LG",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q06-C07",
+     "row": 3612,
+     "arxiv_id": "2605.19947v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "TF-IDF": 1,
+      "MiniLM": 1,
+      "SPECTER2": 1,
+      "BGE-small": 4,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q06-C08",
+     "row": 1910,
+     "arxiv_id": "2605.25211v1",
+     "primary": "cs.LG",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q06-C09",
+     "row": 4446,
+     "arxiv_id": "2605.17465v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "LSA-128",
+      "MiniLM",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 4,
+      "LSA-128": 2,
+      "MiniLM": 2,
+      "BGE-small": 5,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q06-C10",
+     "row": 7222,
+     "arxiv_id": "2605.10163v1",
+     "primary": "stat.ML",
+     "systems": [
+      "MiniLM",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 3,
+      "BGE-small": 1,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q06-C11",
+     "row": 7008,
+     "arxiv_id": "2605.10651v1",
+     "primary": "cs.LG",
+     "systems": [
+      "MiniLM",
+      "BGE-small"
+     ],
+     "rank": {
+      "MiniLM": 5,
+      "BGE-small": 2
+     }
+    },
+    {
+     "cid": "Q06-C12",
+     "row": 5189,
+     "arxiv_id": "2605.15353v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "MiniLM",
+      "SPECTER2",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 2,
+      "TF-IDF": 4,
+      "MiniLM": 4,
+      "SPECTER2": 3,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q06-C13",
+     "row": 5093,
+     "arxiv_id": "2605.15562v1",
+     "primary": "cs.CL",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 3
+     }
+    },
+    {
+     "cid": "Q06-C14",
+     "row": 7020,
+     "arxiv_id": "2605.10624v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 5
+     }
+    },
+    {
+     "cid": "Q06-C15",
+     "row": 9515,
+     "arxiv_id": "2605.04838v1",
+     "primary": "stat.ME",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 4
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q07",
+   "row": 2018,
+   "arxiv_id": "2605.24938v1",
+   "primary": "cs.IR",
+   "candidates": [
+    {
+     "cid": "Q07-C01",
+     "row": 5490,
+     "arxiv_id": "2605.14448v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25",
+      "SPECTER2",
+      "BGE-small"
+     ],
+     "rank": {
+      "BM25": 4,
+      "SPECTER2": 2,
+      "BGE-small": 4
+     }
+    },
+    {
+     "cid": "Q07-C02",
+     "row": 2089,
+     "arxiv_id": "2605.24764v1",
+     "primary": "cs.IR",
+     "systems": [
+      "TF-IDF",
+      "BGE-small"
+     ],
+     "rank": {
+      "TF-IDF": 5,
+      "BGE-small": 5
+     }
+    },
+    {
+     "cid": "Q07-C03",
+     "row": 8852,
+     "arxiv_id": "2605.06460v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "LSA-128",
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "TF-IDF": 1,
+      "LSA-128": 1,
+      "MiniLM": 1,
+      "SPECTER2": 1,
+      "BGE-small": 2,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q07-C04",
+     "row": 393,
+     "arxiv_id": "2605.29384v1",
+     "primary": "cs.IR",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 2
+     }
+    },
+    {
+     "cid": "Q07-C05",
+     "row": 7249,
+     "arxiv_id": "2605.10109v1",
+     "primary": "cs.IR",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 5
+     }
+    },
+    {
+     "cid": "Q07-C06",
+     "row": 8514,
+     "arxiv_id": "2605.07210v2",
+     "primary": "cs.IR",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 4
+     }
+    },
+    {
+     "cid": "Q07-C07",
+     "row": 3400,
+     "arxiv_id": "2605.20674v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 2,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q07-C08",
+     "row": 1295,
+     "arxiv_id": "2605.26941v1",
+     "primary": "cs.IR",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q07-C09",
+     "row": 2901,
+     "arxiv_id": "2605.22202v1",
+     "primary": "cs.CL",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 5
+     }
+    },
+    {
+     "cid": "Q07-C10",
+     "row": 6523,
+     "arxiv_id": "2605.11864v1",
+     "primary": "cs.IR",
+     "systems": [
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 3,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q07-C11",
+     "row": 98,
+     "arxiv_id": "2605.30120v1",
+     "primary": "cs.IR",
+     "systems": [
+      "TF-IDF",
+      "LSA-128",
+      "SPECTER2"
+     ],
+     "rank": {
+      "TF-IDF": 3,
+      "LSA-128": 3,
+      "SPECTER2": 3
+     }
+    },
+    {
+     "cid": "Q07-C12",
+     "row": 134,
+     "arxiv_id": "2605.30027v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25",
+      "LSA-128",
+      "MiniLM",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 3,
+      "LSA-128": 4,
+      "MiniLM": 2,
+      "BGE-small": 1,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q07-C13",
+     "row": 4490,
+     "arxiv_id": "2605.17366v1",
+     "primary": "cs.IR",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q07-C14",
+     "row": 5434,
+     "arxiv_id": "2605.14581v1",
+     "primary": "cs.CV",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 4
+     }
+    },
+    {
+     "cid": "Q07-C15",
+     "row": 429,
+     "arxiv_id": "2605.29287v1",
+     "primary": "cs.IR",
+     "systems": [
+      "LSA-128",
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "LSA-128": 2,
+      "MiniLM": 4,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q07-C16",
+     "row": 2183,
+     "arxiv_id": "2605.24530v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 5
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q08",
+   "row": 6691,
+   "arxiv_id": "2605.11479v1",
+   "primary": "cs.RO",
+   "candidates": [
+    {
+     "cid": "Q08-C01",
+     "row": 8656,
+     "arxiv_id": "2605.06951v1",
+     "primary": "cs.AI",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q08-C02",
+     "row": 800,
+     "arxiv_id": "2605.28231v1",
+     "primary": "cs.RO",
+     "systems": [
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 1,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q08-C03",
+     "row": 5254,
+     "arxiv_id": "2605.15108v2",
+     "primary": "stat.ML",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 1
+     }
+    },
+    {
+     "cid": "Q08-C04",
+     "row": 6998,
+     "arxiv_id": "2605.10671v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 1
+     }
+    },
+    {
+     "cid": "Q08-C05",
+     "row": 7556,
+     "arxiv_id": "2605.11009v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q08-C06",
+     "row": 5235,
+     "arxiv_id": "2605.15157v2",
+     "primary": "cs.RO",
+     "systems": [
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 4,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q08-C07",
+     "row": 6025,
+     "arxiv_id": "2605.13067v1",
+     "primary": "cs.RO",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q08-C08",
+     "row": 3072,
+     "arxiv_id": "2605.21736v1",
+     "primary": "stat.ML",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 2
+     }
+    },
+    {
+     "cid": "Q08-C09",
+     "row": 1587,
+     "arxiv_id": "2605.26078v2",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 4
+     }
+    },
+    {
+     "cid": "Q08-C10",
+     "row": 7898,
+     "arxiv_id": "2605.08774v1",
+     "primary": "cs.RO",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 4
+     }
+    },
+    {
+     "cid": "Q08-C11",
+     "row": 5074,
+     "arxiv_id": "2605.15603v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 5
+     }
+    },
+    {
+     "cid": "Q08-C12",
+     "row": 1556,
+     "arxiv_id": "2605.26282v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 2
+     }
+    },
+    {
+     "cid": "Q08-C13",
+     "row": 8973,
+     "arxiv_id": "2605.06222v2",
+     "primary": "cs.RO",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 5
+     }
+    },
+    {
+     "cid": "Q08-C14",
+     "row": 9316,
+     "arxiv_id": "2605.05481v1",
+     "primary": "cs.LG",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 3
+     }
+    },
+    {
+     "cid": "Q08-C15",
+     "row": 5030,
+     "arxiv_id": "2605.15705v1",
+     "primary": "cs.RO",
+     "systems": [
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small"
+     ],
+     "rank": {
+      "MiniLM": 5,
+      "SPECTER2": 4,
+      "BGE-small": 2
+     }
+    },
+    {
+     "cid": "Q08-C16",
+     "row": 9400,
+     "arxiv_id": "2605.05123v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 5
+     }
+    },
+    {
+     "cid": "Q08-C17",
+     "row": 53,
+     "arxiv_id": "2605.30226v1",
+     "primary": "cs.RO",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 3
+     }
+    },
+    {
+     "cid": "Q08-C18",
+     "row": 4852,
+     "arxiv_id": "2605.16241v1",
+     "primary": "cs.CV",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 2
+     }
+    },
+    {
+     "cid": "Q08-C19",
+     "row": 8278,
+     "arxiv_id": "2605.07727v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 1
+     }
+    },
+    {
+     "cid": "Q08-C20",
+     "row": 4106,
+     "arxiv_id": "2605.18373v1",
+     "primary": "cs.RO",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 4
+     }
+    },
+    {
+     "cid": "Q08-C21",
+     "row": 2091,
+     "arxiv_id": "2605.24759v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 2
+     }
+    },
+    {
+     "cid": "Q08-C22",
+     "row": 3330,
+     "arxiv_id": "2605.20856v1",
+     "primary": "cs.RO",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 5
+     }
+    },
+    {
+     "cid": "Q08-C23",
+     "row": 5365,
+     "arxiv_id": "2605.14779v1",
+     "primary": "cs.LG",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 3,
+      "TF-IDF": 3,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q08-C24",
+     "row": 7577,
+     "arxiv_id": "2605.09410v1",
+     "primary": "cs.RO",
+     "systems": [
+      "SPECTER2",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "SPECTER2": 1,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q08-C25",
+     "row": 1359,
+     "arxiv_id": "2605.26784v1",
+     "primary": "cs.LG",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 2
+     }
+    },
+    {
+     "cid": "Q08-C26",
+     "row": 8568,
+     "arxiv_id": "2605.07116v1",
+     "primary": "cs.LG",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q08-C27",
+     "row": 1704,
+     "arxiv_id": "2605.25740v1",
+     "primary": "cs.LG",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 3
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q09",
+   "row": 7421,
+   "arxiv_id": "2605.11030v1",
+   "primary": "cs.SE",
+   "candidates": [
+    {
+     "cid": "Q09-C01",
+     "row": 1405,
+     "arxiv_id": "2605.26663v1",
+     "primary": "cs.CL",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 5
+     }
+    },
+    {
+     "cid": "Q09-C02",
+     "row": 2763,
+     "arxiv_id": "2605.22564v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 3
+     }
+    },
+    {
+     "cid": "Q09-C03",
+     "row": 980,
+     "arxiv_id": "2605.27898v1",
+     "primary": "cs.AI",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 5
+     }
+    },
+    {
+     "cid": "Q09-C04",
+     "row": 4685,
+     "arxiv_id": "2605.16909v1",
+     "primary": "cs.AI",
+     "systems": [
+      "SPECTER2",
+      "BGE-small"
+     ],
+     "rank": {
+      "SPECTER2": 5,
+      "BGE-small": 4
+     }
+    },
+    {
+     "cid": "Q09-C05",
+     "row": 8539,
+     "arxiv_id": "2605.08267v1",
+     "primary": "cs.SE",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 3
+     }
+    },
+    {
+     "cid": "Q09-C06",
+     "row": 4211,
+     "arxiv_id": "2605.20251v4",
+     "primary": "cs.SE",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 3
+     }
+    },
+    {
+     "cid": "Q09-C07",
+     "row": 965,
+     "arxiv_id": "2605.27922v1",
+     "primary": "cs.AI",
+     "systems": [
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "MiniLM": 1,
+      "SPECTER2": 2,
+      "BGE-small": 1,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q09-C08",
+     "row": 9353,
+     "arxiv_id": "2605.05379v1",
+     "primary": "cs.AI",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 2
+     }
+    },
+    {
+     "cid": "Q09-C09",
+     "row": 8113,
+     "arxiv_id": "2605.08366v1",
+     "primary": "cs.LG",
+     "systems": [
+      "TF-IDF",
+      "SPECTER2"
+     ],
+     "rank": {
+      "TF-IDF": 4,
+      "SPECTER2": 3
+     }
+    },
+    {
+     "cid": "Q09-C10",
+     "row": 7873,
+     "arxiv_id": "2605.08828v2",
+     "primary": "cs.AI",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "LSA-128",
+      "SPECTER2",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 5,
+      "TF-IDF": 1,
+      "LSA-128": 1,
+      "SPECTER2": 1,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q09-C11",
+     "row": 786,
+     "arxiv_id": "2605.28282v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BM25",
+      "TF-IDF"
+     ],
+     "rank": {
+      "BM25": 2,
+      "TF-IDF": 5
+     }
+    },
+    {
+     "cid": "Q09-C12",
+     "row": 4236,
+     "arxiv_id": "2605.17998v2",
+     "primary": "cs.SE",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "LSA-128",
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "TF-IDF": 2,
+      "LSA-128": 3,
+      "MiniLM": 4,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q09-C13",
+     "row": 5629,
+     "arxiv_id": "2605.14133v2",
+     "primary": "cs.AI",
+     "systems": [
+      "MiniLM",
+      "BGE-small"
+     ],
+     "rank": {
+      "MiniLM": 2,
+      "BGE-small": 2
+     }
+    },
+    {
+     "cid": "Q09-C14",
+     "row": 6097,
+     "arxiv_id": "2605.12925v2",
+     "primary": "cs.SE",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 4
+     }
+    },
+    {
+     "cid": "Q09-C15",
+     "row": 6410,
+     "arxiv_id": "2605.12131v1",
+     "primary": "cs.AI",
+     "systems": [
+      "BM25",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 4,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q09-C16",
+     "row": 6065,
+     "arxiv_id": "2605.12981v3",
+     "primary": "cs.SE",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q09-C17",
+     "row": 926,
+     "arxiv_id": "2605.28000v1",
+     "primary": "cs.SE",
+     "systems": [
+      "BM25",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 3,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q09-C18",
+     "row": 7441,
+     "arxiv_id": "2605.09730v3",
+     "primary": "cs.LG",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 5
+     }
+    }
+   ]
+  },
+  {
+   "qid": "Q10",
+   "row": 4575,
+   "arxiv_id": "2605.17181v1",
+   "primary": "cs.SD",
+   "candidates": [
+    {
+     "cid": "Q10-C01",
+     "row": 3257,
+     "arxiv_id": "2605.21081v1",
+     "primary": "cs.SD",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 5
+     }
+    },
+    {
+     "cid": "Q10-C02",
+     "row": 3371,
+     "arxiv_id": "2605.20735v1",
+     "primary": "cs.CV",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 3
+     }
+    },
+    {
+     "cid": "Q10-C03",
+     "row": 9904,
+     "arxiv_id": "2605.03541v1",
+     "primary": "cs.SD",
+     "systems": [
+      "TF-IDF",
+      "MiniLM",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "TF-IDF": 4,
+      "MiniLM": 4,
+      "Hybrid_MiniLMpBM25_0.6": 5
+     }
+    },
+    {
+     "cid": "Q10-C04",
+     "row": 6408,
+     "arxiv_id": "2605.12135v1",
+     "primary": "cs.SD",
+     "systems": [
+      "BGE-small"
+     ],
+     "rank": {
+      "BGE-small": 5
+     }
+    },
+    {
+     "cid": "Q10-C05",
+     "row": 4280,
+     "arxiv_id": "2605.18916v2",
+     "primary": "cs.MM",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 2
+     }
+    },
+    {
+     "cid": "Q10-C06",
+     "row": 8766,
+     "arxiv_id": "2605.06627v1",
+     "primary": "cs.SD",
+     "systems": [
+      "BM25",
+      "LSA-128",
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 4,
+      "LSA-128": 5,
+      "MiniLM": 1,
+      "SPECTER2": 1,
+      "BGE-small": 4,
+      "Hybrid_MiniLMpBM25_0.6": 1
+     }
+    },
+    {
+     "cid": "Q10-C07",
+     "row": 8815,
+     "arxiv_id": "2605.06535v1",
+     "primary": "cs.CV",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 4
+     }
+    },
+    {
+     "cid": "Q10-C08",
+     "row": 6920,
+     "arxiv_id": "2605.10835v1",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 1,
+      "TF-IDF": 2,
+      "SPECTER2": 3,
+      "BGE-small": 1,
+      "Hybrid_MiniLMpBM25_0.6": 3
+     }
+    },
+    {
+     "cid": "Q10-C09",
+     "row": 1822,
+     "arxiv_id": "2605.26176v1",
+     "primary": "cs.SD",
+     "systems": [
+      "MiniLM"
+     ],
+     "rank": {
+      "MiniLM": 5
+     }
+    },
+    {
+     "cid": "Q10-C10",
+     "row": 5949,
+     "arxiv_id": "2605.13228v1",
+     "primary": "cs.CV",
+     "systems": [
+      "LSA-128"
+     ],
+     "rank": {
+      "LSA-128": 1
+     }
+    },
+    {
+     "cid": "Q10-C11",
+     "row": 7166,
+     "arxiv_id": "2605.10281v1",
+     "primary": "cs.SD",
+     "systems": [
+      "SPECTER2"
+     ],
+     "rank": {
+      "SPECTER2": 4
+     }
+    },
+    {
+     "cid": "Q10-C12",
+     "row": 5374,
+     "arxiv_id": "2605.14765v1",
+     "primary": "cs.SD",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 5
+     }
+    },
+    {
+     "cid": "Q10-C13",
+     "row": 2879,
+     "arxiv_id": "2605.22255v2",
+     "primary": "cs.CV",
+     "systems": [
+      "BM25",
+      "MiniLM",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 3,
+      "MiniLM": 2,
+      "BGE-small": 2,
+      "Hybrid_MiniLMpBM25_0.6": 4
+     }
+    },
+    {
+     "cid": "Q10-C14",
+     "row": 1234,
+     "arxiv_id": "2605.27103v1",
+     "primary": "cs.IR",
+     "systems": [
+      "TF-IDF"
+     ],
+     "rank": {
+      "TF-IDF": 1
+     }
+    },
+    {
+     "cid": "Q10-C15",
+     "row": 2274,
+     "arxiv_id": "2605.24291v1",
+     "primary": "cs.SD",
+     "systems": [
+      "BM25",
+      "TF-IDF",
+      "MiniLM",
+      "SPECTER2",
+      "BGE-small",
+      "Hybrid_MiniLMpBM25_0.6"
+     ],
+     "rank": {
+      "BM25": 2,
+      "TF-IDF": 3,
+      "MiniLM": 3,
+      "SPECTER2": 2,
+      "BGE-small": 3,
+      "Hybrid_MiniLMpBM25_0.6": 2
+     }
+    },
+    {
+     "cid": "Q10-C16",
+     "row": 1482,
+     "arxiv_id": "2605.26463v1",
+     "primary": "cs.CL",
+     "systems": [
+      "BM25"
+     ],
+     "rank": {
+      "BM25": 5
+     }
+    }
+   ]
+  }
+ ]
+}

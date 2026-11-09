@@ -2,7 +2,7 @@
 
 Code and data for the paper **"Comparative Analysis of Vectorization Models and Retrieval Methods for Finding Similar Scientific Papers"** (A. Tursynbayev, Zh. Sadirmekova; ICTACS 2026, Tashkent).
 
-The task is query-by-document retrieval: given one arXiv paper (title + abstract), rank the other papers of the corpus. The query paper is removed from its own candidate list. A retrieved paper counts as relevant when it shares the query's primary arXiv category.
+The task is query-by-document retrieval: given one arXiv paper (title + abstract), rank the other papers of the corpus. The query paper is removed from its own candidate list. A retrieved paper counts as relevant when it shares the query's primary arXiv category. A blind problem-level reading of 10 queries (212 pooled candidates, judged by the first author) checks this proxy.
 
 Systems: BM25, TF-IDF cosine, LSA, `all-MiniLM-L6-v2`, SPECTER2 (proximity adapter), `bge-small-en-v1.5`, and a convex dense + BM25 hybrid.
 
@@ -33,9 +33,14 @@ Systems: BM25, TF-IDF cosine, LSA, `all-MiniLM-L6-v2`, SPECTER2 (proximity adapt
 | `scripts/05_descriptives.py` | Corpus checks: versions, duplicates, dates, language proxy, shared authors and near-duplicate titles in the top 5. |
 | `scripts/06_make_tables.py` | Writes every number, table and figure used in the paper. |
 | `results/<corpus>/` | `results.json`, per-query test scores, top-100 rankings, dev query list. |
+| `judgments/` | Blind pool (`pool_blind.json`), pool key with retrieving systems and ranks (`pool_key.json`), the first author's labels (`labels.json`, and the filled spreadsheet). |
 | `paper/` | LaTeX source and PDF of the camera-ready version. |
 
-`scripts/04_build_pool.py` builds a blind judgment pool from the rankings for future problem-level relevance judgments.
+`scripts/04_build_pool.py` builds the blind judgment pool from the test rankings.
+
+## Problem-level reading
+
+Reader P@5 (same research problem, 10 queries, one annotator): BM25 0.18, TF-IDF 0.20, LSA 0.10, MiniLM 0.10, SPECTER2 0.10, BGE-small 0.16, hybrid 0.20. See `results/reader_summary.json`.
 
 ## Reproduce
 
