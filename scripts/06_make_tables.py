@@ -109,6 +109,7 @@ def main() -> None:
         chk = D["may2026" if c == "may" else "y2020_2024"]["top5_checks"]
         sa = [v["shared_author_share"] for v in chk.values()]
         vals[f"{c}.sharedauthor"] = f"{100*min(sa):.1f}--{100*max(sa):.1f}\\%"
+        vals[f"{c}.authorfilter.maxdiff"] = f"{max(abs(v['P@5'] - v['P@5_without_shared_author']) for v in chk.values()):.3f}"
         nd = [v["title_jaccard_ge_0.5"] for v in chk.values()]
         vals[f"{c}.neardup"] = f"{min(nd)}--{max(nd)}"
         vals[f"{c}.slots"] = f"{list(chk.values())[0]['slots']:,}".replace(",", "{,}")
@@ -278,6 +279,12 @@ def main() -> None:
     t += ["\\bottomrule", "\\multicolumn{5}{@{}l}{\\scriptsize $^\\dagger$ dense model alone.}", "\\end{tabular}", "\\end{table*}"]
     (TAB / "sens.tex").write_text("\n".join(t) + "\n", encoding="utf-8")
     vals["tune.maxgain"] = f"{max(gains):.3f}"
+    ty = R["y"]["test_tuned"]
+    gy = [ty[[k for k in ty if k.startswith(pre)][0]]["P@5"]["mean"] - R["y"]["summary"][base]["P@5"]["mean"]
+          for pre, base in (("BM25 (", "BM25"), ("TF-IDF (", "TF-IDF"), ("LSA (", "LSA-128"))]
+    vals["tune.maxgain.y"] = f"{max(gy):.3f}"
+    vals["tune.bestsparse.y"] = f3(max(ty[k]["P@5"]["mean"] for k in ty if not k.startswith("Hybrid")))
+    vals["y.weakestdense.P5"] = f3(min(R["y"]["summary"][d]["P@5"]["mean"] for d in DENSE))
     sparse_loss = [abl[f"{s}|ta"]["P@5"] - abl[f"{s}|title"]["P@5"] for s in ("BM25", "TF-IDF", "LSA-128")]
     vals["abl.titleloss"] = f"{min(sparse_loss):.3f}--{max(sparse_loss):.3f}"
     if "MiniLM|title" in abl:

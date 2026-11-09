@@ -30,6 +30,8 @@
   "authors_per_paper_median": 4.0,
   "top5_checks": {
    "BM25": {
+    "P@5": 0.4564770554493308,
+    "P@5_without_shared_author": 0.44835086042065014,
     "slots": 41840,
     "shared_author_slots": 1187,
     "shared_author_share": 0.02836998087954111,
@@ -37,6 +39,8 @@
     "title_jaccard_max": 0.8181818181818182
    },
    "TF-IDF": {
+    "P@5": 0.42927820267686423,
+    "P@5_without_shared_author": 0.42301625239005736,
     "slots": 41840,
     "shared_author_slots": 892,
     "shared_author_share": 0.021319311663479924,
@@ -44,6 +48,8 @@
     "title_jaccard_max": 0.8181818181818182
    },
    "LSA-128": {
+    "P@5": 0.4536089866156788,
+    "P@5_without_shared_author": 0.4503346080305928,
     "slots": 41840,
     "shared_author_slots": 618,
     "shared_author_share": 0.014770554493307839,
@@ -51,6 +57,8 @@
     "title_jaccard_max": 0.8181818181818182
    },
    "MiniLM": {
+    "P@5": 0.5104923518164435,
+    "P@5_without_shared_author": 0.5066921606118547,
     "slots": 41840,
     "shared_author_slots": 914,
     "shared_author_share": 0.02184512428298279,
@@ -58,6 +66,8 @@
     "title_jaccard_max": 0.8181818181818182
    },
    "SPECTER2": {
+    "P@5": 0.5201242829827916,
+    "P@5_without_shared_author": 0.5162284894837477,
     "slots": 41840,
     "shared_author_slots": 937,
     "shared_author_share": 0.022394837476099428,
@@ -65,6 +75,8 @@
     "title_jaccard_max": 0.8181818181818182
    },
    "BGE-small": {
+    "P@5": 0.5123565965583173,
+    "P@5_without_shared_author": 0.5071462715105162,
     "slots": 41840,
     "shared_author_slots": 952,
     "shared_author_share": 0.022753346080305926,
@@ -72,6 +84,8 @@
     "title_jaccard_max": 0.8181818181818182
    },
    "Hybrid_MiniLMpBM25_0.6": {
+    "P@5": 0.509321223709369,
+    "P@5_without_shared_author": 0.5028202676864245,
     "slots": 41840,
     "shared_author_slots": 1223,
     "shared_author_share": 0.029230401529636713,
@@ -118,6 +132,8 @@
   "authors_per_paper_median": 4.0,
   "top5_checks": {
    "BM25": {
+    "P@5": 0.4807343768388843,
+    "P@5_without_shared_author": 0.47555607861598215,
     "slots": 42485,
     "shared_author_slots": 1168,
     "shared_author_share": 0.027492056019771685,
@@ -125,6 +141,8 @@
     "title_jaccard_max": 0.875
    },
    "TF-IDF": {
+    "P@5": 0.4515476050370719,
+    "P@5_without_shared_author": 0.44761680593150527,
     "slots": 42485,
     "shared_author_slots": 794,
     "shared_author_share": 0.018688949040837944,
@@ -132,6 +150,8 @@
     "title_jaccard_max": 0.875
    },
    "LSA-128": {
+    "P@5": 0.4665882076026833,
+    "P@5_without_shared_author": 0.463363540072967,
     "slots": 42485,
     "shared_author_slots": 593,
     "shared_author_share": 0.013957867482640931,
@@ -139,6 +159,8 @@
     "title_jaccard_max": 0.875
    },
    "MiniLM": {
+    "P@5": 0.5607155466635283,
+    "P@5_without_shared_author": 0.557326115099447,
     "slots": 42485,
     "shared_author_slots": 893,
     "shared_author_share": 0.02101918324114393,
@@ -146,6 +168,8 @@
     "title_jaccard_max": 0.875
    },
    "SPECTER2": {
+    "P@5": 0.5668353536542309,
+    "P@5_without_shared_author": 0.5636106861245145,
     "slots": 42485,
     "shared_author_slots": 935,
     "shared_author_share": 0.022007767447334355,
@@ -153,6 +177,8 @@
     "title_jaccard_max": 0.875
    },
    "BGE-small": {
+    "P@5": 0.5418147581499353,
+    "P@5_without_shared_author": 0.538707779216194,
     "slots": 42485,
     "shared_author_slots": 932,
     "shared_author_share": 0.021937154289749322,
@@ -160,6 +186,8 @@
     "title_jaccard_max": 0.875
    },
    "Hybrid_MiniLMpBM25_0.6": {
+    "P@5": 0.5476756502294927,
+    "P@5_without_shared_author": 0.5441920677886313,
     "slots": 42485,
     "shared_author_slots": 1185,
     "shared_author_share": 0.027892197246086853,

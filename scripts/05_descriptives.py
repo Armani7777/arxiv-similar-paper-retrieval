@@ -71,7 +71,12 @@ def main() -> None:
                 top = z[s][:, :5]
                 shared = sum(bool(authors[qi] & authors[d]) for qi, row in zip(q, top) for d in row)
                 tj = [title_jaccard(papers[qi]["title"], papers[d]["title"]) for qi, row in zip(q, top) for d in row]
-                checks[s] = {"slots": int(top.size), "shared_author_slots": int(shared),
+                prim = np.array([p["primary_category"] for p in papers])
+                base = np.mean([np.mean(prim[row[:5]] == prim[qi]) for qi, row in zip(q, z[s])])
+                filt = np.mean([np.mean(prim[[d for d in row if not (authors[qi] & authors[d])][:5]] == prim[qi])
+                                for qi, row in zip(q, z[s])])
+                checks[s] = {"P@5": float(base), "P@5_without_shared_author": float(filt),
+                             "slots": int(top.size), "shared_author_slots": int(shared),
                              "shared_author_share": shared / top.size,
                              "title_jaccard_ge_0.5": int(sum(t >= 0.5 for t in tj)),
                              "title_jaccard_max": float(max(tj))}
